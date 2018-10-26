@@ -1,2 +1,28 @@
-This is a small program that scrapes the web for articles
-It then takes those articles and sends them to your email
+Notes:
+
+Currently only works for gmail!
+
+Welcome to microlearn! This nice little script will give you the featured wikipedia article of the day!
+
+Dependencies:
+
+python3
+smtplib (pip3 install smtplib)
+requests (pip3 install requests)
+datetime (pip3 install datetime)
+Wikipedia API
+
+Setup:
+
+1. Clone the repo
+2. In the terminal:
+    $ touch config.py
+3. In config.py:
+   user = "youremail@gmail.com"
+   password = "P@ssword!"
+4. Go to your Google Account> Enable Less Secure Apps
+5. To test that the program is working, run $ python3 send_email.py
+
+If you have any suggestions on how to improve this little project, please feel free to suggest!
+
+I hope to keep building up this project and make it an effective way to learn new things!

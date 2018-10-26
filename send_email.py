@@ -1,7 +1,7 @@
 import smtplib
 from wikipedia_requests import parse_request
 from datetime import datetime
-from config.py import *
+from config import *
 
 today = datetime.today()
 day, month, year = today.day, today.month, today.year

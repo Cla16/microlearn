@@ -10,6 +10,7 @@ python3
 smtplib (pip3 install smtplib)
 requests (pip3 install requests)
 datetime (pip3 install datetime)
+schedule (pip3 install schedule)
 Wikipedia API
 
 Setup:
@@ -22,6 +23,8 @@ Setup:
    password = "P@ssword!"
 4. Go to your Google Account> Enable Less Secure Apps
 5. To test that the program is working, run $ python3 send_email.py
+6. Run $ nohup python3.6 send_daily.py &
+7. Enjoy your daily email!
 
 If you have any suggestions on how to improve this little project, please feel free to suggest!
 

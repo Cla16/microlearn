@@ -8,10 +8,11 @@ FEED_ENDPOINT = "https://en.wikipedia.org/api/rest_v1/feed/featured/"
 today = datetime.today()
 year, month, day = today.year, today.month, today.day
 
-def build_feed_request(feed_ep = FEED_ENDPOINT, year = today.year, month = today.month, day = today.day):
+def build_feed_request(feed_ep = FEED_ENDPOINT):
     """ Input: Feed end point, year as int, month as int, day as int
     Output: Composed request URL"""
-
+    today = datetime.today()
+    year, month, day = today.year, today.month, today.day
     request_url = feed_ep + str(year) + "/" + str(month) + "/" + str(day)
     return(request_url)
 
